@@ -1,0 +1,51 @@
+/*
+
+Title: Collabofide
+Author: J Dutra M Nt
+Author URL: https://dutraneto.com/portfolio
+Starts on: 03/08/20
+
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: $hind-madurai;
+    background-color: $white;
+}
+
+
+
+a:visited,
+a:link {
+    color: currentColor;
+    text-decoration: none;
+}
+
+a:link:active,
+a:visited:active {
+    color: currentColor;
+}
+
+::-moz-selection {
+    background-color: $punch;
+    color: $white;
+}
+
+::selection {
+    background-color: $punch;
+    color: $white;
+}

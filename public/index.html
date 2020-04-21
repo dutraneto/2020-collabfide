@@ -1,0 +1,20 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Collabofide</title><link href="https://fonts.googleapis.com/css?family=Hind+Madurai:300,400|Lora:400,400i|Montserrat:700&display=swap" rel="stylesheet"><link rel="stylesheet" href="assets/css/main.min.css"></head><body><header class="header"><section class="container"><a href="./"><img class="logo" src="assets/img/colo_logo.svg" alt="Collabofide Logo"></a><article class="container__wrapper"><div class="heading"><h1>StartUp Landing</h1><h3>Generate font combination with deep learning</h3></div><div class="cta"><form class="cta__subscribe" action=""><p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit, nostrum est, nam, repellat reiciendis perferendis delectus suscipit rem autem facilis provident fuga aspernatur quos excepturi sequi molestias corrupti dolor iure!</p><input id="subscribe" class="cta__subscribe-control" type="email" name="" value="" placeholder="Your best email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required> <button class="cta__subscribe-btn">subscribe</button></form><picture class="cta__illustration"><img src="assets/img/resp-team.jpg" alt="Illustration of 3 business people"></picture></div></article></section></header><script>document.addEventListener('DOMContentLoaded', function () {
+            // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
+            // // The Firebase SDK is initialized and available here!
+            //
+            // firebase.auth().onAuthStateChanged(user => { });
+            // firebase.database().ref('/path/to/ref').on('value', snapshot => { });
+            // firebase.messaging().requestPermission().then(() => { });
+            // firebase.storage().ref('/path/to/ref').getDownloadURL().then(() => { });
+            //
+            // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
+
+            try {
+                let app = firebase.app();
+                let features = ['auth', 'database', 'messaging', 'storage'].filter(feature => typeof app[feature] === 'function');
+                document.getElementById('load').innerHTML = `Firebase SDK loaded with ${features.join(', ')}`;
+            } catch (e) {
+                console.error(e);
+                document.getElementById('load').innerHTML = 'Error loading the Firebase SDK, check the console.';
+            }
+        });</script></body></html>

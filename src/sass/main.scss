@@ -1,0 +1,7 @@
+@charset 'UTF-8';
+
+// 1. vendors
+@import 'vendors/normalize';
+
+// 2. layouts
+@import 'layout/variables', 'layout/base', 'layout/header', 'layout/footer';
