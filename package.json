@@ -33,7 +33,9 @@
         "gulp-sass": "^4.0.2",
         "gulp-sourcemaps": "^2.6.5",
         "gulp-uglify": "^3.0.2",
-        "node-sass": "^4.13.1",
         "readable-stream": "^3.6.0"
+    },
+    "dependencies": {
+        "node-sass": "^5.0.0"
     }
 }
